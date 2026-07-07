@@ -1,12 +1,212 @@
-.Navbar {
-    background-color: #333;
-    padding: 0;
-}
-
-.navlinks {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
+body {
+    background-color: #282922;
+    background-size: cover;
     margin: 0;
     padding: 0;
+    font-family: "Century Gothic", Arial, sans-serif;
+}
+
+.Navbar {
+    position: sticky;
+    top: 0;
+    right: 0;
+    background: #1d1d1c;
+    color: white;
+    z-index: 1000;
+    width: 100%;
+
+}
+
+.Navbar:hover {
+    border: 3px solid #dddda4;
+    transform: translateY(1px);
+    border-radius: 1rem;
+}
+
+.navlinks { 
+    width: 100%;
+    display: flex;
+}
+
+.navlinks a{
+    text-decoration: none;
+    color: #dddda4; 
+    font-size: 1rem;
+    padding: 1rem 5rem;
+}
+
+.navlinks ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+    padding: 2.5vh ;
+    margin: 0;
+}
+
+.navlinks li {
+    display: flex;
+    align-items: center;
+}
+
+.navlinks a:hover,
+.navlinks a:focus {
+    background-color: #2f332a;
+    color: #dddda4;
+    border-radius: 1rem;
+    transform: translateY(-1px);
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    color: #dddda4;
+    margin-left:5rem;
+    margin-right:5rem;
+    padding: 1rem;
+    /* 1d1f16 */
+    background-color:#1d1d1c;
+    border-radius: 3rem;
+}
+
+.profile-container h3 {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    width: 17rem;
+    height: 2rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: #2f332a;
+    border-radius: 1rem;
+    
+}
+
+.profile-container:hover {
+    /* background-color: #2f332a;
+    color: #dddda4; */
+    border: 3px solid #dddda4;
+    transform: translateY(-1px);
+}
+
+.photo-frame img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #dddda4;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    color: #dddda4;
+    margin-left:5rem;
+    margin-right:5rem;
+    padding: 2rem;
+    background-color:#1d1d1c;
+    border-radius: 3rem;
+}
+
+.about-container:hover {
+    border: 3px solid #dddda4;
+    transform: translateY(-1px);
+}
+
+.about-container h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #2f332a;
+    width: 15rem;
+    height: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    color: #dddda4;
+    margin-left:5rem;
+    margin-right:5rem;
+    padding: 2rem;
+    background-color:#1d1d1c;
+    border-radius: 3rem;
+}
+
+.projects-container:hover {
+    border: 3px solid #dddda4;
+    transform: translateY(-1px);
+}
+
+.projects-container video {
+    width: 100%;
+    max-width: 1100px;
+    max-height: 800px;
+    border-radius: 2rem;
+    border: 2px solid #dddda4;
+    margin-bottom: 1rem;
+}
+
+.projects-container h2 {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #2f332a;
+    width: 15rem;
+    height: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.projects-container h3 {
+    text-decoration: underline;
+    margin-bottom: 0rem;
+}
+
+.projects-container p{
+    margin-bottom: 3rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    color: #dddda4;
+    margin-left:5rem;
+    margin-right:5rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color:#1d1d1c;
+    border-radius: 3rem;
+}
+
+.contact-container:hover {
+    border: 3px solid #dddda4;
+    transform: translateY(-1px);
+}
+
+.contact-container h2 {
+    margin-top: 0rem;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #2f332a;
+    width: 15rem;
+    height: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
